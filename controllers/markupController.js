@@ -1,6 +1,6 @@
 const Markup = require("../models/Markup.js");
 
-// ✅ ADD MARKUP
+//   ADD MARKUP
 const addMarkup = async (req, res) => {
   try {
     const { city, markup } = req.body;
@@ -14,7 +14,7 @@ const addMarkup = async (req, res) => {
   }
 };
 
-// ✅ GET ALL MARKUPS
+//   GET ALL MARKUPS
 const getMarkups = async (req, res) => {
   try {
     const data = await Markup.find();
@@ -24,7 +24,7 @@ const getMarkups = async (req, res) => {
   }
 };
 
-// ✅ UPDATE MARKUP
+//   UPDATE MARKUP
  const updateMarkup = async (req, res) => {
   try {
     const { city } = req.params;
@@ -41,7 +41,7 @@ const getMarkups = async (req, res) => {
     }
 
     res.json({
-      message: "✅ Markup updated successfully",
+      message: "  Markup updated successfully",
       updated,
     });
   } catch (error) {
@@ -51,7 +51,7 @@ const getMarkups = async (req, res) => {
 
 
 
-// ✅ DELETE MARKUP
+//   DELETE MARKUP
 const deleteMarkup = async (req, res) => {
   try {
     await Markup.deleteOne({ city: req.params.city });

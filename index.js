@@ -12,19 +12,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ Connect MongoDB
+//   Connect MongoDB
 connectDB();
 
-// ✅ Routes
+//   Routes
 app.use("/api/admin", adminRoutes);
 app.use("/api/hotels", hotelRoutes);
 
-// ✅ Test Route
+//   Test Route
 app.get("/", (req, res) => {
-  res.send("Goodweeks Backend Running ✅");
+  res.send("Goodweeks Backend Running  ");
 });
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`✅ Server running on port ${PORT}`);
+  console.log(`  Server running on port ${PORT}`);
 });

@@ -1,7 +1,7 @@
 
 ---
 
-# ✅ ✅ BACKEND REPO README  
+# BACKEND REPO README  
 📍 **Repo:** `goodweeksBackend`
 
 ```md
